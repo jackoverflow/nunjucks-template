@@ -1,0 +1,17 @@
+{% macro active(activePage='home') %}
+<h1 class="visuallyhidden">Da Vinci Minds University</h1>
+<nav>
+  <h2 class="visuallyhidden">Main Navigation</h2>
+  <ul>
+  	<li>
+  		<a href="index.html" class="{%if activePage == 'home' %} active {% endif %}">Home</a>
+  	</li>
+	<li>
+  		<a href="about.html" class="{%if activePage == 'about' %} active {% endif %}">About</a>
+  	</li>
+  	<li>
+  		<a href="contact-us.html" class="{%if activePage == 'contact-us' %} active {% endif %}">Contact Us</a>
+  	</li>
+  </ul>
+</nav>
+{% endmacro %}
